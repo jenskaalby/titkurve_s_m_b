@@ -34,7 +34,7 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )
 st.sidebar.markdown(
-    "<p style='font-size:12px; color:gray;'>Hvis figurer fra denne applikation anvendes i opgaver eller lignende, "
+    "<p style='font-size:12px; color:gray;'> Hvis figurer fra denne applikation anvendes i opgaver eller lignende, "
     "bedes du kreditere forfatteren.</p>",
     unsafe_allow_html=True
 )
