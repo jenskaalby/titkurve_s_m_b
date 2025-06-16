@@ -9,16 +9,16 @@ st.markdown("<h3 style='text-align: center;'> 🔬 JKT's titrerkurvegenerator</h
 
 # Inputs
 with st.sidebar:
-    st.markdown("<p style='font-size:19px; margin-bottom:-8px;'>Volumen af analyseopløsningen (mL)</p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size:19px; margin-bottom:-12px;'>Volumen af analyseopløsningen (mL)</p>", unsafe_allow_html=True)
     vanalytic = st.number_input("", value=25.0, step=1.0, min_value=10.0, max_value=30.0)
 
-    st.markdown("<p style='font-size:19px; margin-bottom:-8px;'>Koncentration af syren (M)</p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size:19px; margin-bottom:-12px;'>Koncentration af syren (M)</p>", unsafe_allow_html=True)
     cacid = st.number_input("", value=0.06, step=0.01, min_value=0.04, max_value=0.10)
 
-    st.markdown("<p style='font-size:19px; margin-bottom:-8px;'>Koncentration af basen (M)</p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size:19px; margin-bottom:-12px;'>Koncentration af basen (M)</p>", unsafe_allow_html=True)
     ctitr = st.number_input("", value=0.10, step=0.01, min_value=0.05, max_value=0.12)
 
-    st.markdown("<p style='font-size:19px; margin-bottom:-8px;'>pKa af syren</p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size:19px; margin-bottom:-12px;'>pKa af syren</p>", unsafe_allow_html=True)
     pKa = st.number_input("", value=5.00, step=0.1, min_value=2.0, max_value=6.5)
 
 #vanalytic = st.sidebar.number_input("Volumen af analyseopløsningen (mL)", value=25.0, step=1.0, min_value=10.0, max_value=30.0)
