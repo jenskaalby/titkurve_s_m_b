@@ -18,7 +18,7 @@ with st.sidebar:
     st.markdown("<p style='font-size:19px; margin-bottom:-35px;'>Koncentration af basen (M)</p>", unsafe_allow_html=True)
     ctitr = st.number_input("", value=0.10, step=0.01, min_value=0.05, max_value=0.12)
 
-    st.markdown("<p style='font-size:19px; margin-bottom:-35px;'>pKa af syren</p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size:19px; margin-bottom:-35px;'>pK<sub>s</sub> af syren</p>", unsafe_allow_html=True)
     pKa = st.number_input("", value=5.00, step=0.1, min_value=2.0, max_value=6.5)
 
 #vanalytic = st.sidebar.number_input("Volumen af analyseopløsningen (mL)", value=25.0, step=1.0, min_value=10.0, max_value=30.0)
