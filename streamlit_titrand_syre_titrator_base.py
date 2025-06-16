@@ -16,10 +16,20 @@ ctitr = st.sidebar.number_input("Koncentration af basen (M)", value=0.1, step=0.
 pKa = st.sidebar.number_input("pKa af syren", value=5.00, step=0.1, min_value=2.0, max_value=6.50)
 
 # --- LICENSINFO I SIDEBAR ---
-st.sidebar.markdown("---")
-st.sidebar.markdown("© 2025 Jens Kaalby Thomsen. Dette værktøj er udgivet under [MIT-licens](https://opensource.org/licenses/MIT).")
-st.sidebar.markdown("Hvis figurer fra denne applikation anvendes i opgaver eller lignende, bedes du kreditere forfatteren.")
-
+#st.sidebar.markdown("---")
+#st.sidebar.markdown("© 2025 Jens Kaalby Thomsen. Dette værktøj er udgivet under [MIT-licens](https://opensource.org/licenses/MIT).")
+#st.sidebar.markdown("Hvis figurer fra denne applikation anvendes i opgaver eller lignende, bedes du kreditere forfatteren.")
+st.sidebar.markdown("---", unsafe_allow_html=True)
+st.sidebar.markdown(
+    "<p style='font-size:12px; color:gray;'>© 2025 Jens Kaalby Thomsen.<br>"
+    "Dette værktøj er udgivet under <a href='https://opensource.org/licenses/MIT' target='_blank'>MIT-licens</a>.</p>",
+    unsafe_allow_html=True
+)
+st.sidebar.markdown(
+    "<p style='font-size:12px; color:gray;'>Hvis figurer fra denne applikation anvendes i opgaver eller lignende, "
+    "bedes du kreditere forfatteren.</p>",
+    unsafe_allow_html=True
+)
 
 Ka = 10 ** (-pKa)
 Ve = cacid * vanalytic / ctitr
