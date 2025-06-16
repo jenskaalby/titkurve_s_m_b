@@ -13,7 +13,7 @@ st.markdown("<h3 style='text-align: center;'> 🔬 JT's titrerkurvegenerator</h3
 vanalytic = st.sidebar.number_input("Volumen af analyseopløsningen (mL)", value=25.0, step=1.0, min_value=10.0, max_value=30.0)
 cacid = st.sidebar.number_input("Koncentration af syren (M)", value=0.06, step=0.01, min_value=0.05, max_value=0.10)
 ctitr = st.sidebar.number_input("Koncentration af basen (M)", value=0.1, step=0.01, min_value=0.05, max_value=0.12)
-pKa = st.sidebar.number_input("pKa af syren", value=4.72, step=0.1, min_value=2.0, max_value=6.5)
+pKa = st.sidebar.number_input("pKa af syren", value=5.00, step=0.1, min_value=2.0, max_value=6.50)
 
 # --- LICENSINFO I SIDEBAR ---
 st.sidebar.markdown("---")
