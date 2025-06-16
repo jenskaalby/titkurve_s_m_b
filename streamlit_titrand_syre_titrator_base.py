@@ -12,10 +12,10 @@ with st.sidebar:
     st.markdown("<p style='font-size:19px; margin-bottom:-35px;'>Volumen af analyseopløsningen (mL)</p>", unsafe_allow_html=True)
     vanalytic = st.number_input("", value=25.0, step=1.0, min_value=10.0, max_value=30.0)
 
-    st.markdown("<p style='font-size:19px; margin-bottom:-35px;'>Koncentration af syren (M)</p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size:19px; margin-bottom:-35px;'>Koncentration af syren (titrand) (M)</p>", unsafe_allow_html=True)
     cacid = st.number_input("", value=0.06, step=0.01, min_value=0.04, max_value=0.10)
 
-    st.markdown("<p style='font-size:19px; margin-bottom:-35px;'>Koncentration af basen (M)</p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size:19px; margin-bottom:-35px;'>Koncentration af basen i(titrator) (M)</p>", unsafe_allow_html=True)
     ctitr = st.number_input("", value=0.10, step=0.01, min_value=0.05, max_value=0.12)
 
     st.markdown("<p style='font-size:19px; margin-bottom:-35px;'>pK<sub>s</sub> af syren</p>", unsafe_allow_html=True)
