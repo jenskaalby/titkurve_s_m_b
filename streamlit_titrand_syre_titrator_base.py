@@ -74,7 +74,7 @@ v_combined = np.concatenate([v_transition, v_buffer, v_post])
 pH_combined = np.concatenate([pH_transition, pH_buffer, pH_post])
 
 # Plot
-fig, ax = plt.subplots(figsize=(10, 4.8))
+fig, ax = plt.subplots(figsize=(10, 5.5))
 ax.plot(v_combined, pH_combined, color='darkred')
 
 ax.set_xlabel("Volumen af NaOH (mL)", fontsize=14)
