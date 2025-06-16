@@ -15,16 +15,11 @@ with st.sidebar:
     st.markdown("<p style='font-size:19px; margin-bottom:-35px;'>Koncentration af syren (titrand) (M)</p>", unsafe_allow_html=True)
     cacid = st.number_input("", value=0.06, step=0.01, min_value=0.04, max_value=0.10)
 
-    st.markdown("<p style='font-size:19px; margin-bottom:-35px;'>Koncentration af basen i(titrator) (M)</p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size:19px; margin-bottom:-35px;'>Koncentration af basen (titrator) (M)</p>", unsafe_allow_html=True)
     ctitr = st.number_input("", value=0.10, step=0.01, min_value=0.05, max_value=0.12)
 
     st.markdown("<p style='font-size:19px; margin-bottom:-35px;'>pK<sub>s</sub> af syren</p>", unsafe_allow_html=True)
     pKa = st.number_input("", value=5.00, step=0.1, min_value=2.0, max_value=6.5)
-
-#vanalytic = st.sidebar.number_input("Volumen af analyseopløsningen (mL)", value=25.0, step=1.0, min_value=10.0, max_value=30.0)
-#cacid = st.sidebar.number_input("Koncentration af syren (M)", value=0.06, step=0.01, min_value=0.05, max_value=0.10)
-#ctitr = st.sidebar.number_input("Koncentration af basen (M)", value=0.1, step=0.01, min_value=0.05, max_value=0.12)
-#pKa = st.sidebar.number_input("pKa af syren", value=5.00, step=0.1, min_value=2.0, max_value=6.50)
 
 # --- LICENSINFO I SIDEBAR ---
 st.sidebar.markdown("---", unsafe_allow_html=True)
