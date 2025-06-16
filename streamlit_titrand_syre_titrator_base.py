@@ -89,26 +89,29 @@ ax.grid(True, linestyle='-', alpha=0.5)
 
 st.pyplot(fig)
 
-# PNG download ---
-png_buffer = BytesIO()
-fig.savefig(png_buffer, format='png')
-png_buffer.seek(0)
+# Save figure to in-memory buffer
+def save_figure(fig, fmt):
+    buf = BytesIO()
+    fig.savefig(buf, format=fmt, bbox_inches='tight')
+    buf.seek(0)
+    return buf
 
-st.download_button(
-    label="Download plot som PNG",
-    data=png_buffer,
-    file_name="titrerkurve.png",
-    mime="image/png"
-)
+# Create download buttons side by side
+col1, col2 = st.columns([1, 1])
+with col1:
+    st.download_button(
+        label="Download PNG",
+        data=save_figure(fig, "png"),
+        file_name="titrerkurve.png",
+        mime="image/png",
+        key="download_png"
+    )
 
-# SVG download ---
-svg_buffer = BytesIO()
-fig.savefig(svg_buffer, format='svg')
-svg_buffer.seek(0)
-
-st.download_button(
-    label="Download plot som SVG",
-    data=svg_buffer,
-    file_name="titrerkurve.svg",
-    mime="image/svg+xml"
-)
+with col2:
+    st.download_button(
+        label="Download SVG",
+        data=save_figure(fig, "svg"),
+        file_name="titrerkurve.svg",
+        mime="image/svg+xml",
+        key="download_svg"
+    )
