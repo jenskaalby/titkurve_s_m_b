@@ -5,7 +5,8 @@ from scipy.optimize import brentq
 from io import BytesIO
 
 st.set_page_config(layout="centered")
-st.title("JKT's titrerkurvegenerator")
+#st.title("JKT's titrerkurvegenerator")
+st.markdown("##### 🔬 JKT's titrerkurvegenerator")
 
 # Inputs
 vanalytic = st.sidebar.number_input("Volumen af analyseopløsningen (mL)", value=25.0, step=1.0, min_value=10.0, max_value=30.0)
