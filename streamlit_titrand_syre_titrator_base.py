@@ -14,6 +14,12 @@ cacid = st.sidebar.number_input("Koncentration af syren (M)", value=0.06, step=0
 ctitr = st.sidebar.number_input("Koncentration af basen (M)", value=0.1, step=0.01, min_value=0.05, max_value=0.12)
 pKa = st.sidebar.number_input("pKa af syren", value=4.72, step=0.1, min_value=2.0, max_value=6.5)
 
+# --- LICENSINFO I SIDEBAR ---
+st.sidebar.markdown("---")
+st.sidebar.markdown("© 2025 Jens Kaalby Thomsen. Dette værktøj er udgivet under [MIT-licens](https://opensource.org/licenses/MIT).")
+st.sidebar.markdown("Hvis figurer fra denne applikation anvendes i opgaver eller lignende, bedes du kreditere forfatteren.")
+
+
 Ka = 10 ** (-pKa)
 Ve = cacid * vanalytic / ctitr
 max_volume = 30  # Fikseret beregnings- og plotområde til 30 mL
@@ -105,7 +111,3 @@ st.download_button(
     file_name="titrerkurve.svg",
     mime="image/svg+xml"
 )
-
-st.markdown("---")
-st.markdown("© 2025 Jens Kaalby Thomsen. Dette værktøj er udgivet under [MIT-licens](https://opensource.org/licenses/MIT).")
-st.markdown("Hvis figurer fra denne applikation anvendes i opgaver eller lignende, bedes du kreditere forfatteren.")
