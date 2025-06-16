@@ -29,7 +29,7 @@ with st.sidebar:
 # --- LICENSINFO I SIDEBAR ---
 st.sidebar.markdown("---", unsafe_allow_html=True)
 st.sidebar.markdown(
-    "<p style='font-size:12px; color:gray;'>© 2025 Jens Kaalby Thomsen.<br>"
+    "<p style='font-size:12px; color:gray;'>Udviklere: Jens Kaalby Thomsen og OpenAI ChatGPT.<br>"
     "Dette værktøj er udgivet under <a href='https://opensource.org/licenses/MIT' target='_blank'>MIT-licens</a>.</p>",
     unsafe_allow_html=True
 )
