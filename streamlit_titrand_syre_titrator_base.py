@@ -15,7 +15,7 @@ with st.sidebar:
     vanalytic = st.number_input("", value=25.0, step=1.0, min_value=10.0, max_value=30.0)
 
     st.markdown("<p style='font-size:13px;'>Koncentration af syren (M)</p>", unsafe_allow_html=True)
-    cacid = st.number_input("", value=0.06, step=0.01, min_value=0.05, max_value=0.10)
+    cacid = st.number_input("", value=0.06, step=0.01, min_value=0.04, max_value=0.10)
 
     st.markdown("<p style='font-size:13px;'>Koncentration af basen (M)</p>", unsafe_allow_html=True)
     ctitr = st.number_input("", value=0.10, step=0.01, min_value=0.05, max_value=0.12)
