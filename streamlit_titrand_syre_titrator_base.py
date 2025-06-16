@@ -5,9 +5,7 @@ from scipy.optimize import brentq
 from io import BytesIO
 
 st.set_page_config(layout="centered")
-#st.title("JKT's titrerkurvegenerator")
-st.markdown("<h3 style='text-align: center;'> 🔬 JT's titrerkurvegenerator</h3>", unsafe_allow_html=True)
-#st.markdown("##### 🔬 JKT's titrerkurvegenerator")
+st.markdown("<h3 style='text-align: center;'> 🔬 JKT's titrerkurvegenerator</h3>", unsafe_allow_html=True)
 
 # Inputs
 with st.sidebar:
