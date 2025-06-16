@@ -10,15 +10,25 @@ st.markdown("<h3 style='text-align: center;'> 🔬 JT's titrerkurvegenerator</h3
 #st.markdown("##### 🔬 JKT's titrerkurvegenerator")
 
 # Inputs
-vanalytic = st.sidebar.number_input("Volumen af analyseopløsningen (mL)", value=25.0, step=1.0, min_value=10.0, max_value=30.0)
-cacid = st.sidebar.number_input("Koncentration af syren (M)", value=0.06, step=0.01, min_value=0.05, max_value=0.10)
-ctitr = st.sidebar.number_input("Koncentration af basen (M)", value=0.1, step=0.01, min_value=0.05, max_value=0.12)
-pKa = st.sidebar.number_input("pKa af syren", value=5.00, step=0.1, min_value=2.0, max_value=6.50)
+with st.sidebar:
+    st.markdown("<p style='font-size:13px;'>Volumen af analyseopløsningen (mL)</p>", unsafe_allow_html=True)
+    vanalytic = st.number_input("", value=25.0, step=1.0, min_value=10.0, max_value=30.0)
+
+    st.markdown("<p style='font-size:13px;'>Koncentration af syren (M)</p>", unsafe_allow_html=True)
+    cacid = st.number_input("", value=0.06, step=0.01, min_value=0.05, max_value=0.10)
+
+    st.markdown("<p style='font-size:13px;'>Koncentration af basen (M)</p>", unsafe_allow_html=True)
+    ctitr = st.number_input("", value=0.10, step=0.01, min_value=0.05, max_value=0.12)
+
+    st.markdown("<p style='font-size:13px;'>pKa af syren</p>", unsafe_allow_html=True)
+    pKa = st.number_input("", value=5.00, step=0.1, min_value=2.0, max_value=6.5)
+
+#vanalytic = st.sidebar.number_input("Volumen af analyseopløsningen (mL)", value=25.0, step=1.0, min_value=10.0, max_value=30.0)
+#cacid = st.sidebar.number_input("Koncentration af syren (M)", value=0.06, step=0.01, min_value=0.05, max_value=0.10)
+#ctitr = st.sidebar.number_input("Koncentration af basen (M)", value=0.1, step=0.01, min_value=0.05, max_value=0.12)
+#pKa = st.sidebar.number_input("pKa af syren", value=5.00, step=0.1, min_value=2.0, max_value=6.50)
 
 # --- LICENSINFO I SIDEBAR ---
-#st.sidebar.markdown("---")
-#st.sidebar.markdown("© 2025 Jens Kaalby Thomsen. Dette værktøj er udgivet under [MIT-licens](https://opensource.org/licenses/MIT).")
-#st.sidebar.markdown("Hvis figurer fra denne applikation anvendes i opgaver eller lignende, bedes du kreditere forfatteren.")
 st.sidebar.markdown("---", unsafe_allow_html=True)
 st.sidebar.markdown(
     "<p style='font-size:12px; color:gray;'>© 2025 Jens Kaalby Thomsen.<br>"
