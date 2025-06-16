@@ -6,7 +6,8 @@ from io import BytesIO
 
 st.set_page_config(layout="centered")
 #st.title("JKT's titrerkurvegenerator")
-st.markdown("##### 🔬 JKT's titrerkurvegenerator")
+st.markdown("<h3 style='text-align: center;'> 🔬 JT's titrerkurvegenerator</h3>", unsafe_allow_html=True)
+#st.markdown("##### 🔬 JKT's titrerkurvegenerator")
 
 # Inputs
 vanalytic = st.sidebar.number_input("Volumen af analyseopløsningen (mL)", value=25.0, step=1.0, min_value=10.0, max_value=30.0)
